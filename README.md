@@ -1,1 +1,2 @@
 # solxyz-development-standard
+テスト
