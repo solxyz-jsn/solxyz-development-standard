@@ -6,7 +6,7 @@
 
 EclipseのCheckstyleプラグインを導入します。
 
-ヘルプ > Eclipseマーケットプレイスから`Checkstyle プラグイン xx.xx.xx`（xはバージョン）をインストールします。
+ヘルプ - Eclipseマーケットプレイスから`Checkstyle プラグイン xx.xx.xx`（xはバージョン）をインストールします。
 
 ![マーケットプレイスの開き方](img/checkstyle_open_market1.png)
 
@@ -94,4 +94,4 @@ Checkstyleを実行します。
 
 ワイルドカードインポートを削除し、それぞれのクラスをインポートしました。
 
-`'*'形式のインポートの使用は避けるべきです`というCheckstyle違反が消えたことが確認できます。
+`'*'形式のインポートの使用は避けるべきです`というCheckstyle違反が消えました。
