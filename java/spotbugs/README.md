@@ -115,3 +115,7 @@ SpotBugsでは、このマークされたコードを**バグ**と呼称して�
 [検知可能なバグ](https://spotbugs.readthedocs.io/ja/latest/bugDescriptions.html)が公開されています。
 
 バグは、10のカテゴリに分かれており、合計で468種類あります。（2022年10月時点）
+
+## ライセンス
+
+本ドキュメントは[MITライセンス](LICENSE)の下公開します。
