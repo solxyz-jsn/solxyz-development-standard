@@ -1,6 +1,6 @@
 FROM node:16.15-bullseye-slim
 
-LABEL maintainer="hikaruright"
+LABEL maintainer="SOLXYZ Co., Ltd."
 
 RUN apt-get update && apt-get install -y git
 
