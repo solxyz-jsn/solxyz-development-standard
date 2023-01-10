@@ -2,9 +2,9 @@
 
 本ドキュメントでは、Checkstyleの設定項目について解説します。
 
-Solxyz Standardでは、[Googleが提供しているCheckstyle設定](https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml)を引用し、一部カスタマイズを行なっています。
+SOLXYZ Standardでは、[Googleが提供しているCheckstyle設定](https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml)を引用し、一部カスタマイズを行なっています。
 
-また、Checkstyleで設定できる項目は多岐に渡ります。そのため、本ドキュメントではSolxyz StandardのCheckstyle設定ファイルにある項目のみ取り扱います。あらかじめご了承ください。
+また、Checkstyleで設定できる項目は多岐に渡ります。そのため、本ドキュメントではSOLXYZ StandardのCheckstyle設定ファイルにある項目のみ取り扱います。あらかじめご了承ください。
 
 その他の設定項目については、[Checkstyleリファレンス - Checks](https://checkstyle.sourceforge.io/checks.html)をご参照ください。
 
