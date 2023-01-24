@@ -1,6 +1,6 @@
-# SOLXYZ Standard コントリビューションガイドへようこそ <!-- omit in toc -->
+# Solxyz Standard コントリビューションガイドへようこそ <!-- omit in toc -->
 
-SOLXYZ Standardの品質向上のためにお時間を割いてくださり、ありがとうございます。
+Solxyz Standardの品質向上のためにお時間を割いてくださり、ありがとうございます。
 
 このガイドでは、コントリビューションワークフロー（issueの提議、Pull Requestの作成、レビュー、PRのマージなど）を説明します。
 
@@ -19,9 +19,9 @@ SOLXYZ Standardの品質向上のためにお時間を割いてくださり、�
 
 ## はじめに
 
-SOLXYZ Standardの目的、意義などは[ソルクシーズスタンダード策定の目的](introduction.md)を参照してください。
+Solxyz Standardの目的、意義などは[ソルクシーズスタンダード策定の目的](introduction.md)を参照してください。
 
-SOLXYZ Standardは基本的に[マークダウン](https://ja.wikipedia.org/wiki/Markdown)によって記述されています。
+Solxyz Standardは基本的に[マークダウン](https://ja.wikipedia.org/wiki/Markdown)によって記述されています。
 
 マークダウンの記述方法はWeb上に多くのリファレンスが提供されていますので、ここでは割愛します。
 
@@ -49,7 +49,7 @@ SOLXYZ Standardは基本的に[マークダウン](https://ja.wikipedia.org/wiki
 
 ## Issues
 
-SOLXYZ Standardの記事の誤りや、疑問点を指摘する際にはIssuesを活用します。
+Solxyz Standardの記事の誤りや、疑問点を指摘する際にはIssuesを活用します。
 
 ### 新規issueの提出
 
@@ -89,7 +89,7 @@ issueの作成方法については[公式ドキュメント - Issueの作成](h
 
 3. Rancher Desktopのインストール
 
-    SOLXYZ Standardでは文章校正などのライブラリをコンテナで提供しています。
+    Solxyz Standardでは文章校正などのライブラリをコンテナで提供しています。
 
     コンテナを動作させるために[Rancher Desktop](https://rancherdesktop.io/)をインストールします。
 
@@ -99,7 +99,7 @@ issueの作成方法については[公式ドキュメント - Issueの作成](h
 
 4. リポジトリのフォーク
 
-   SOLXYZ Standardのリポジトリを自分のGitHubアカウントにフォークします
+   Solxyz Standardのリポジトリを自分のGitHubアカウントにフォークします
 
 5. リポジトリのクローン
 
@@ -117,7 +117,7 @@ issueの作成方法については[公式ドキュメント - Issueの作成](h
 
     しばらく待つとコンテナが作成され、そのコンテナ上で執筆を開始できます。
 
-    ![image.png](/img/vscode.bmp)
+    ![image.png](/img/vscode.png)
 
 ### 編集のコミット
 
@@ -131,11 +131,11 @@ issueの作成方法については[公式ドキュメント - Issueの作成](h
 
 1. フォークしたリポジトリにアクセスし、Pull requestsタブから、「New pull request」ボタンを押下すると、テンプレートが表示されます。テンプレートにしたがって必要事項を入力し、PRを作成します。
 
-2. PRを提出すると、SOLXYZ Standardチームのメンバーが提案をレビューします。質問をしたり、追加情報を要求する場合があります。
+2. PRを提出すると、Solxyz Standardチームのメンバーが提案をレビューします。質問をしたり、追加情報を要求する場合があります。
 
-3. SOLXYZ Standardチームの要求に対して、PRを更新して変更を適用したら、要求のコメントに変更内容を返信します。
+3. Solxyz Standardチームの要求に対して、PRを更新して変更を適用したら、要求のコメントに変更内容を返信します。
 
-4. チームが変更を承認すると、PRはSOLXYZ Standardにマージされます。
+4. チームが変更を承認すると、PRはSolxyz Standardにマージされます。
 
 ## GitHubマニュアル
 
