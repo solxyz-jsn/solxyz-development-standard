@@ -1,0 +1,24 @@
+# Linting Document Workflow.
+name: Linting Documents
+
+permissions: read-all
+
+on:
+  push:
+    branches:
+      - main
+      - migration
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    container:
+      image: solxyz/markdown-writing-template:0.5
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: npm install
+        run: npm install
+
+      - name: Linting Codes
+        run: npm run lint
