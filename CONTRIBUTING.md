@@ -117,7 +117,7 @@ issueの作成方法については[公式ドキュメント - Issueの作成](h
 
     しばらく待つとコンテナが作成され、そのコンテナ上で執筆を開始できます。
 
-    ![image.png](/img/vscode.bmp)
+    ![image.png](/img/vscode.png)
 
 ### 編集のコミット
 
