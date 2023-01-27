@@ -6,7 +6,7 @@ RDBMS製品によっては利用できないものがあることに留意が必
 
 SQLの例はスペース削減のため、フォーマットを行っていません。
 
-実装時には[SQLスタイルガイド](sqlstyle.guide.ja.md)にしたがいます。
+実装時には[SQLスタイルガイド](./../style-guide/sqlstyle.guide.ja.md)にしたがいます。
 
 ## 目次
 
