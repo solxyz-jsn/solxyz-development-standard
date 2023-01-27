@@ -19,8 +19,6 @@ SOLXYZ Standardの品質向上のためにお時間を割いてくださり、�
 
 ## はじめに
 
-SOLXYZ Standardの目的、意義などは[ソルクシーズスタンダード策定の目的](introduction.md)を参照してください。
-
 SOLXYZ Standardは基本的に[マークダウン](https://ja.wikipedia.org/wiki/Markdown)によって記述されています。
 
 マークダウンの記述方法はWeb上に多くのリファレンスが提供されていますので、ここでは割愛します。
