@@ -170,7 +170,7 @@ SELECT * FROM Products WHERE column_name BETWEEN '2020-07-01 00:00:00' AND '2020
 
 **NULL**は**値**ではないことに注意する。
 
-> 詳しくは[コラム：NULLを知り、正しく向き合う](know_what_is_null.md)を参照
+> 詳しくは[コラム：NULLを知り、正しく向き合う](https://zenn.dev/solxyz_bso/articles/ddcadedf9bb424)を参照
 
 ```SQL
 -- NULLのカラム
@@ -211,7 +211,7 @@ SELECT column_name1, column_name2 + `, ` + column_name3 AS alias_name;
 
 重複を気にしないのであれば、パフォーマンスに優れた**UNION ALL**を利用する。
 
-> 詳しくは[コラム：非効率なSQLを学ぶ](inefficient_query.md)を参照
+> 詳しくは[コラム：非効率なSQLを学ぶ](https://zenn.dev/solxyz_bso/articles/f04bcaa379ab97)を参照
 
 ### **INTERSECT**
 
