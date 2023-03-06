@@ -59,7 +59,7 @@
   事前に用語辞書を作成するなど、プロジェクト内で共通の識別子と名前を使用する。
 
 - スペースとインデントを慎重に使用しコードを読みやすくする。
-- [ISO-8601][iso-8601]に準拠した日付時間フォーマット（`YYYY-MM-DD HH:MM:SS.SSSSS`）で格納する。
+- [ISO-8601][iso-8601]に準拠した日付時間フォーマット（`YYYY-MM-DDTHH:MM:SS.SSSSS`）で格納する。
 - 移植性のためベンダー固有の関数の代わりに標準のSQL関数のみを使用する。
 - コードを簡潔で冗長なSQLのない状態に保つ。たとえば、不必要なクォート、括弧、他の条件と重なる `WHERE` 句は避ける。
 - 必要に応じてSQLコードにコメントを挿入する。可能なら `/*` で始まり `*/` で終わるC言語スタイルのコメントを使用し、その他の場合、`--` で始まり改行で終わる行コメントを使用する。
@@ -313,7 +313,7 @@ OR
 
 `JOIN`句は、`FROM`句と同じ段落に記載し、その条件の`ON`は結合するテーブルと同じ位置に揃える。
 
-また内部結合の場合、必ず`INNER JOIN`を利用する。（`WHERE`句内で結合条件を記述する書き方をしない）
+また内部結合の場合、必ず`INNER JOIN`を利用する。
 
 ```sql
 SELECT
@@ -329,6 +329,28 @@ INNER JOIN
 INNER JOIN
   crew AS c
   ON
+    r.crew_chief_last_name = c.last_name
+  AND
+    c.chief = 'Y';
+```
+
+次のような`WHERE`句内で結合条件を記述する書き方をしない。
+
+```sql
+-- 結果は同じように出力されるがよくない結合の実装
+SELECT
+  r.last_name
+FROM
+  riders AS r
+INNER JOIN
+  bikes AS b
+INNER JOIN
+  crew AS c
+WHERE
+    r.bike_vin_num = b.vin_num
+  AND
+    b.engine_tally > 2
+  AND
     r.crew_chief_last_name = c.last_name
   AND
     c.chief = 'Y';
@@ -439,7 +461,7 @@ AND
 
 1. キーはある程度一意でなければならない。
 2. スキーマ全体を通じデータ型の一貫性があり、将来の変更可能性が低いこと。
-3. 標準的なフォーマット（ISOで公開されているものなど）で値を検証できるようにする。これは項番2に通じる。
+3. 標準的なフォーマット（※）で値を検証できるようにする。これは項番2に通じる。
 4. キーをできるだけシンプルに保つ一方で、必要に応じて複合キーを恐れずに使用する。
 
 これはデータベース定義の時点で論理的かつ慎重に行われる作業である。
@@ -447,6 +469,15 @@ AND
 万一、将来要件が変わっても定義を変更し最新の状態に保つことを可能にする。
 
 <div style="page-break-before:always"></div>
+
+> ※ 標準的なフォーマットとは
+>
+> 業務によってさまざまなケースがあると考えられるが、
+> 関係者が共通して理解できる値を利用することが望まれている。
+> 元文書では「ISOで公開されているものなど」を推奨している。
+>
+> - 日付：[ISO-8601][iso-8601]
+> - 国略称：[ISO-3166-1][iso-3166-1]　等
 
 #### 制約の定義
 
@@ -1404,6 +1435,8 @@ ZONE
     "SQL style guide by Simon Holywell"
 [iso-8601]: https://ja.wikipedia.org/wiki/ISO_8601
     "Wikipedia: ISO 8601"
+[iso-3166-1]: https://ja.wikipedia.org/wiki/ISO_3166-1
+    "Wikipedia: ISO 3166-1"
 [rivers]: https://practicaltypography.com/one-space-between-sentences.html
     "Practical Typography: one space between sentences"
 [licence-ja]: https://creativecommons.org/licenses/by-sa/4.0/deed.ja
