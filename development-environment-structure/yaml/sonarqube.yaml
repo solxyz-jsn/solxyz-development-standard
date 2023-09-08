@@ -1,0 +1,69 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sonarqube-deployment
+  labels:
+    app: sonarqube
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sonarqube
+  template:
+    metadata:
+      labels:
+        app: sonarqube
+    spec:
+      initContainers:
+      - name: volume-mount-hack
+        image: busybox
+        command: ["sh", "-c", "chown -R 1000:1000 /opt/sonarqube/conf && chown -R 1000:1000 /opt/sonarqube/data && chown -R 1000:1000 /opt/sonarqube/logs && chown -R 1000:1000 /opt/sonarqube/extensions"]
+        volumeMounts:
+        - name: sonarqube-conf
+          mountPath: "/opt/sonarqube/conf"
+        - name: sonarqube-data
+          mountPath: "/opt/sonarqube/data"
+        - name: sonarqube-extensions
+          mountPath: "/opt/sonarqube/extensions"
+        - name: sonarqube-logs
+          mountPath: "/opt/sonarqube/logs"
+      containers:
+      - name: sonarqube
+        image: sonarqube:9.9.1-community
+        ports:
+        - containerPort: 9000
+        volumeMounts:
+        - name: sonarqube-data
+          mountPath: "/opt/sonarqube/data"
+        - name: sonarqube-extensions
+          mountPath: "/opt/sonarqube/extensions"
+        - name: sonarqube-logs
+          mountPath: "/opt/sonarqube/logs"
+      volumes:
+      - name: sonarqube-conf
+        hostPath:
+          path: /var/microk8s/sonarqube/conf
+      - name: sonarqube-data
+        hostPath:
+          path: /var/microk8s/sonarqube/data
+      - name: sonarqube-extensions
+        hostPath:
+          path: /var/microk8s/sonarqube/extensions
+      - name: sonarqube-logs
+        hostPath:
+          path: /var/microk8s/sonarqube/logs
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: sonarqube-svc
+spec:
+  type: NodePort
+  selector:
+    app: sonarqube
+  ports:
+    - name: http
+      protocol: TCP
+      port: 9000
+      nodePort: 30090
