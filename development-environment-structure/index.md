@@ -45,6 +45,10 @@ SonarQubeの詳細については、[SonarQubeの公式サイト](https://www.so
 - MicroK8s v1.22.2
 - AWS EC2 t2.large（2vCPU, 8GB RAM）
 
+## 配布ファイル
+
+このガイドで利用するK8sのリソースファイルは、`yaml`ディレクトリで管理しています。
+
 ## 備考
 
 Gitの基本的な使い方については、ソルクシーズアカデミーを参照してください。
