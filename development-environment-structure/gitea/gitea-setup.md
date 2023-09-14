@@ -345,4 +345,4 @@ $ kubectl apply -f gitea-actions.yaml
 
 ワークフローを作成し、特定のブランチにpushやpull requestが行われた場合に実行されるように設定することができます。
 
-このテンプレートは、別途解説します。
+具体的な使用方法は、[SonarQubeセットアップ手順](../sonarqube/SonarQubeセットアップ手順.md)に記載しています。
