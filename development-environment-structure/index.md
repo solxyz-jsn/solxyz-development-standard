@@ -47,4 +47,36 @@ SonarQubeの詳細については、[SonarQubeの公式サイト](https://www.so
 
 ## 備考
 
-Gitの基本的な使い方については、[Gitの基本的な使い方](#)を参照してください。
+Gitの基本的な使い方については、ソルクシーズアカデミーを参照してください。
+
+## 目次
+
+### [OSセットアップ](./os-setup.md)
+
+### Gitea
+
+#### [Giteaのセットアップ](./gitea/gitea-setup.md)
+
+#### [GitHubフローの導入](./gitea/github-flow.md)
+
+#### [GiteaによるGitHubフローの実現](./gitea/github-flow-with-gitea.md)
+
+### SonarQube
+
+#### [SonarQubeのセットアップ](./sonarqube/SonarQubeセットアップ手順.md)
+
+#### [SonarQube使い方](./sonarqube/SonarQube運用方法.md)
+
+#### SonarQubeとIDEの連携
+
+##### [IntelliJ IDEA](./sonarqube/IntelliJ_IDEAでSonarLintを使用する.md)
+
+##### [Visual Studio Code](./sonarqube/Visual_Studio_CodeでSonarLintを使用する.md)
+
+##### [Eclipse](./sonarqube/EclipseでSonarLintを使用する.md)
+
+### 補足
+
+#### [CI/CDとは何か](./what-is-ci-cd.md)
+
+#### [CI/CDの使い方](./how-to-use-ci-cd.md)
