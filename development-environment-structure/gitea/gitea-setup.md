@@ -232,7 +232,7 @@ Giteaにユーザーを追加するには、Giteaの管理者権限が必要で�
 
 `<組織名>を表示`ボタンをクリックすると、現在の組織に属しているリポジトリ、メンバー、チームなどを確認できます。
 
-![Alt text](./images/organization-detail.png)
+![組織詳細画面](./images/organization-detail.png)
 
 初期から作成されているチームの`Owner`は組織の管理者のチームです。
 
