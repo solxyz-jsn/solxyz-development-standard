@@ -295,7 +295,7 @@ Gitea Actionsの設定には、Giteaの管理者権限が必要です。
 
 `サイト管理`をクリックし、Giteaの管理画面に遷移します。
 
-![Alt text](./images/admin-user-management.png)
+![ユーザー管理画面](./images/admin-user-management.png)
 
 Actionsのランナーを選択します。
 
