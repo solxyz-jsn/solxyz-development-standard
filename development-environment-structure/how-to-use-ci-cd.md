@@ -72,7 +72,7 @@ GitHubやGiteaなどのGitホスティングサービスでは、ソースコー
 
 使用している言語によって扱われるビルドシステムは異なります。
 
-Javaであれば、MavenやGradle、Node.jsであればnpmやyarnなどです。
+JavaであればMavenやGradle、Node.jsであればnpmやyarnなどです。
 
 ### 3. テストフレームワーク
 
