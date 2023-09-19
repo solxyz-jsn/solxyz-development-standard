@@ -8,6 +8,7 @@
 1. [開発標準（SQL）](./sql/README.md)
 1. [開発標準（セキュリティ）](./security/README.md)
 1. [単体試験仕様書作成ガイド](./unit-test/unit-test-template.md)
+1. [開発環境構築手順書](./development-environment-structure/index.md)
 
 ## ライセンス
 
