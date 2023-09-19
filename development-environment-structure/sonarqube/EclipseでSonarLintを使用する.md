@@ -17,25 +17,25 @@
 
 ### オンラインのSonarQubeと同期する
 
-設定が必須ではないですが、オンライン同期には以下のような利点があります。
+設定が必須ではないですが、オンライン同期には次のような利点があります。
 
 - **共有されたルール**: SonarQubeに定義されたカスタムルールがEclipse内のSonarLintプラグインで適用されます。これにより、チームメンバー間で一貫したコーディング規約を維持することができます。
-- **False Positive (誤検出) の管理**: SonarQube上でFalse PositiveやWon't Fixとしてマークされた問題は、SonarLintでも同期され、マーカー表示されなくなります。これにより、既知の誤検出や対応の予定がない問題に対して再度注意を払わなくても済むようになります。
+- **False Positive（誤検出）の管理**: SonarQube上でFalse PositiveやWon't Fixとしてマークされた問題は、SonarLintでも同期され、マーカー表示されなくなります。これにより、既知の誤検出や対応の予定がない問題に対して再度注意を払わなくても済むようになります。
 - **課題の同期**: SonarQubeで検出された課題がSonarLintに同期され、開発者がローカルで編集中に課題を確認・修正できるようになります。これにより、問題の修正が容易になります。
 
-以下に設定手順を示します。
+次に設定手順を示します。
 
-1. エクスプローラーに表示されているプロジェクト名を右クリックし、**SonarLint** > **SonarQubeまたはSonarCloudにバインドする**をクリックします</br>
+1. エクスプローラーに表示されているプロジェクト名を右クリックし、`SonarLint > SonarQubeまたはSonarCloudにバインドする`をクリックします</br>
    ![バインディング設定](./images/eclipse_SonarQubeと連携2.png)
-2. **SonarQube**を選択し、**次へ**をクリックします
-3. **Sonar Server URL**には`http://host名（or ホストのIPアドレス）:30090`を入力し、**次へ**をクリックします
-4. **Choose authentication method**では**トークン**、**Username + Password**のどちらを選択しても問題ありません</br>
-   トークンの場合、[SonarQubeセットアップ手順書](./SonarQubeセットアップ手順.md)にてトークンを作成したときと同様の手順で、**Token Type**を**User Token**としてトークンを発行してください</br>
+2. `SonarQube`を選択し、`次へ`をクリックします
+3. `Sonar Server URL`には`http://host名（or ホストのIPアドレス）:30090`を入力し、`次へ`をクリックします
+4. `Choose authentication method`では`トークン`、`Username + Password`のどちらを選択しても問題ありません
+   トークンの場合、[SonarQubeセットアップ手順書](./SonarQubeセットアップ手順.md)と同様の手順で、`Token Type`を`User Token`としてトークンを発行してください
 5. 前の画面で選択した認証方法通りに認証を行います
-6. **SonarQube Connection Identifier**では、接続名を自由に設定してください
-7. **Configure Notifications**では**Receive notifications from SonarQube**を選択し、**次へ**をクリックします
+6. `SonarQube Connection Identifier`では、接続名を自由に設定してください
+7. `Configure Notifications`では**Receive notifications from SonarQube**を選択し、**次へ**をクリックします
 8. **Connection successfully created**と表示されれば、接続成功です
-9. **完了**をクリックすると次にバインドするプロジェクトを選択する画面が表示されます</br>
+9.  **完了**をクリックすると次にバインドするプロジェクトを選択する画面が表示されます</br>
     **追加**をクリックして対象としたいプロジェクトを選択し、**次へ**をクリックします
 10. **Choose the SonarQube/SonarCloud project**ではSonarQubeに登録しているプロジェクト名を入力・選択し、**完了**をクリックします
 
@@ -51,7 +51,7 @@
 3. **SonarLint**の項目**SonarLint オンザフライ**を選択し、**開く**ボタンをクリックします</br>
    ![SonarLintのビュー](./images/eclipse_SonarLintのビューの表示2.png)</br>
 
-SonarLintのビューにはいくつが種類があります。以下にいくつか紹介します。
+SonarLintのビューにはいくつか種類があります。次にいくつか紹介します。
 
 |ビュー名|説明|
 |--|--|
@@ -60,7 +60,7 @@ SonarLintのビューにはいくつが種類があります。以下にいく�
 |ルール説明|オンザフライ等のウィンドウで指摘項目を選択すると、選択中の箇所が違反しているルールの詳細説明が表示されます。|
 |レポート|プロジェクト全体のスキャンを行った際に、その結果を表示します。|
 
-**SonarLint オンザフライ**のウィンドウを使用している状況を以下に示します。
+**SonarLint オンザフライ**のウィンドウを使用している状況を次に示します。
 
 下図のように左下にあるウィンドウが**SonarLint オンザフライ**です。
 
@@ -78,9 +78,9 @@ SonarLintのビューにはいくつが種類があります。以下にいく�
 
 SonarQube同様にプロジェクト全体のスキャンを行うこともできます。
 
-以下にスキャン手順を示します。
+次にスキャン手順を示します。
 
-1. エクスプローラーに表示されているプロジェクト名を右クリックし、**SonarLint** > **分析**をクリックします</br>
+1. エクスプローラーに表示されているプロジェクト名を右クリックし、`SonarLint > 分析`をクリックします</br>
    ![プロジェクト全体をスキャン](./images/eclipse_プロジェクトをスキャン.png)
 2. しばらく時間がかかりますが、解析が完了すると**SonarLint レポート**ウィンドウに結果が表示されます</br>
    ![SonarLintレポート](./images/eclipse_プロジェクトをスキャン2.png)</br>

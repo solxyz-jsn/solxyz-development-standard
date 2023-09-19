@@ -6,7 +6,7 @@
 
 ## スキャンを行うタイミング
 
-`.gitea/workflows/analysis-by-sonar.yml`の2行目の`on`の内容によってスキャンが行われるタイミングが異なります。
+`.gitea/workflows/analysis-by-sonar.yml`の2行目の`on`の内容によってスキャンを行うタイミングが異なります。
 
 ```yaml
 name: "sonarqube"
