@@ -138,7 +138,7 @@ Quality gateとはプロジェクトのコードがクリアすべき品質の�
 
 もしクリアしていない場合は、赤色で「Failed」と表示されます。
 
-Quality gateは初期値として、デフォルト値が設定されていますが、カスタマイズしたい場合は次の手順で行うことができます。
+Quality gateにはデフォルト値が設定されていますが、カスタマイズしたい場合は次の手順で行うことができます。
 
 1. SonarQubeを開き、画面上部のタブにある「Quality Gates」をクリックします</br>
    ![Quality Gate設定画面を開く](./images/SonarQube_QualityGate設定.png)
