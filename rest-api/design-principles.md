@@ -99,13 +99,13 @@ GETメソッドが成功すると、通常HTTPステータスコード`200（OK�
 例）ユーザーの一覧を取得する
 
 ```http
-GET https://example.com/user HTTP/1.1
+GET https://example.com/users HTTP/1.1
 ```
 
 例）IDが123のユーザーを取得する
 
 ```http
-GET https://example.com/user/123 HTTP/1.1
+GET https://example.com/users/123 HTTP/1.1
 ```
 
 #### POSTメソッド
@@ -120,7 +120,7 @@ POSTメソッドが成功すると、通常HTTPステータスコード`201（Cr
 例）新しくユーザーを作成する
 
 ```http
-POST https://example.com/user HTTP/1.1
+POST https://example.com/users HTTP/1.1
 
 {
     "name": "ソルク 太郎",
@@ -146,7 +146,7 @@ PUTメソッドが成功すると、HTTPステータスコード`200（OK）`を
 例）既存のユーザーを更新する
 
 ```http
-PUT https://example.com/user/123 HTTP/1.1
+PUT https://example.com/users/123 HTTP/1.1
 
 {
     "name": "ソルク 太郎",
@@ -176,7 +176,7 @@ PATCHメソッドが成功すると、HTTPステータスコード`200（OK）`�
 例）既存のユーザーの一部の属性を更新する
 
 ```http
-PATCH https://example.com/user/123 HTTP/1.1
+PATCH https://example.com/users/123 HTTP/1.1
 
 {
     "name": "ソルク 太郎"
@@ -196,7 +196,7 @@ DELETEメソッドが成功すると、HTTPステータスコード`200（OK）`
 例）既存のユーザーを削除する
 
 ```http
-DELETE https://example.com/user/123 HTTP/1.1
+DELETE https://example.com/users/123 HTTP/1.1
 ```
 
 DELETEメソッドは、リソースを完全に削除します。リソースを論理的に削除する（例：`isDeleted`フラグを設定する）場合は、PUTまたはPATCHメソッドを使用します。
@@ -209,7 +209,7 @@ DELETEメソッドは、リソースを完全に削除します。リソース�
 
 たとえば、ユーザーのパスワードをリセットする操作は標準メソッドでは表現しづらいため、次のようなカスタムメソッドを定義することができます。
 
-- `POST /user/123/reset-password` - IDが123のユーザーのパスワードをリセットする
+- `POST /users/123/reset-password` - IDが123のユーザーのパスワードをリセットする
 
 リソースとメソッドを適切に組み合わせることで、直感的で一貫性のあるAPIを設計することができます。
 
@@ -217,6 +217,6 @@ DELETEメソッドは、リソースを完全に削除します。リソース�
 
 | リソース | POST | GET | PUT | PATCH |DELETE |
 |---------|------|-----|-----|--------|--------|
-| /user | 新しいユーザーを作成 | すべてのユーザーを取得 | ユーザーを一括更新 | ユーザーの一部の情報を一括更新 | すべてのユーザーを削除 |
-| /user/123 | エラー | ユーザー123を取得 | ユーザー123の更新 | ユーザー123の一部の情報を更新 | ユーザー123を削除 |
-| /user/123/reset-password | ユーザー123のパスワードをリセット | エラー | エラー | エラー | エラー |
+| /users | 新しいユーザーを作成 | すべてのユーザーを取得 | ユーザーを一括更新 | ユーザーの一部の情報を一括更新 | すべてのユーザーを削除 |
+| /users/123 | エラー | ユーザー123を取得 | ユーザー123の更新 | ユーザー123の一部の情報を更新 | ユーザー123を削除 |
+| /users/123/reset-password | ユーザー123のパスワードをリセット | エラー | エラー | エラー | エラー |
