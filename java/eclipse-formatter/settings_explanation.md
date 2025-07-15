@@ -952,7 +952,7 @@ class Example {
 
 ### メソッド/コンストラクター宣言
 
-`<setting id="org.eclipse.jdt.core.formatter.parentheses_positions_in_method_delcaration"/>`
+`<setting id="org.eclipse.jdt.core.formatter.parentheses_positions_in_method_declaration"/>`
 
 メソッド/コンストラクター宣言の丸括弧の位置を設定します。
 
@@ -994,7 +994,7 @@ if, while および do while ステートメントの丸括弧の位置を設定
 
 ### for ステートメント
 
-`<setting id="org.eclipse.jdt.core.formatter.parentheses_positions_in_for_statment"/>`
+`<setting id="org.eclipse.jdt.core.formatter.parentheses_positions_in_for_statement"/>`
 
 forステートメントの丸括弧の位置を設定します。
 
